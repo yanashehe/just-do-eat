@@ -1,0 +1,21 @@
+plugins { id "com.android.application" }
+
+android {
+    namespace "com.istaeat.app"
+    compileSdk 35
+    defaultConfig {
+        applicationId "com.istaeat.app"
+        minSdk 23
+        targetSdk 35
+        versionCode 2
+        versionName "1.1"
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+    buildTypes {
+        debug { applicationIdSuffix "" }
+        release { minifyEnabled false }
+    }
+}
